@@ -69,4 +69,42 @@ else if (num <= 0 || num >= 100) {
     document.write("ENTER A VALID NUMBER");
 }
 ---------------------------------------------------------------------------------
-* /
+------->   using loop  we find factorial of the given  number
+let num=prompt("ENTER THE NUMBER");
+let number=1;
+
+for (let index = 1; index <=num; index++) {
+   number=number*index;
+}
+document.write( "THE FACTORIAL OF THE GIVEN NUMBER  IS :",number);
+
+----------------------------------------------------------------------------------
+------>  sum from 0 to enterd value
+
+let num=prompt("ENTER THE NUMBER");
+let sum=0;
+for (let index = 0; index <=num; index++) {
+  sum=sum+index;
+    
+}document.write(sum);
+------------------------------------------------------------------------------------
+------> ENTERED NUMBER IS PRIME OR NOT 
+
+let num = prompt("ENTER THE NUMBER");
+if (num == 0) {
+    document.write("YOU ENTERED A WHOLE NUMBER (0)");
+}
+else if (num == 1 || num == 2) {
+    document.write("PRIME NUMBER");
+}
+for (let index = 2; index < num/2; index++) {
+    if (num%index== 0||num%3==0||num%2==0) {
+        document.write("NOT PRIME");break;
+    }
+    else {
+        document.write("PRIME");
+    break;}
+
+}
+---------------------------------------------------------------------------------------
+*/
