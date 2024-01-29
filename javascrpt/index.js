@@ -107,4 +107,51 @@ for (let index = 2; index < num/2; index++) {
 
 }
 ---------------------------------------------------------------------------------------
+------>  for of loop 
+
+let str="ANAND PANDEY";
+let length=0;
+for (let i of str) {
+    document.write("i=",i);
+    length++;  
+}
+document.write("length=",length);
+---------------------------------------------------------------------------------------
+------->  for in loop it it gives  us key of the value
+let student = {
+    name: "ANAND PANDEY",
+    age: 19,
+    cgpa: null,
+    ispass: true
+};
+for (let i in student) {
+   document.write("key=",i,"value=",student[i]);
+}
+----------------------------------------------------------------------------------------
+------>  print N that instruct by user
+
+let initial = prompt("ENTER  THE NUMBER ");
+let final = prompt("ENTER  THE NUMBER ");
+for (let index = initial; index <= final; index++) {
+    if (index % 2 === 0) {
+        document.write("EVEN=", index);
+    }
+}
+----------------------------------------------------------------------------------------
+-------> cheap game devlopement by me (guessing the correct number)
+
+let gameNumber=9;
+let num=prompt("ENTER THE NUMBER");
+while (num!==gameNumber) {
+    num=prompt("YOU LOOSE ,GUESS AGAIN"); 
+}
+document.write("CONGRATULATION ! YOU WON");
+----------------------------------------------------------------------------------------
+let name="ANANND PANDEY";
+document.write(name.length);
+document.write(name[4]);//it works here as a c language
+let specialstring=`this is an  template of string`;
+document.write(specialstring);
 */
+
+
